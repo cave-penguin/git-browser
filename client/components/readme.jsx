@@ -23,8 +23,9 @@ const Readme = () => {
     <div>
       <Head title="readme" />
       <Header {...{ userName, repositoryName }} />
-
-      <ReactMarkdown>{text}</ReactMarkdown>
+      <div id="description">
+        <ReactMarkdown>{text}</ReactMarkdown>
+      </div>
     </div>
   )
 }
