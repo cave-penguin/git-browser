@@ -8,8 +8,12 @@ const Header = ({ userName, repositoryName }) => {
         {userName} {repositoryName}
       </div>
       <div className="flex flex-row justify-between">
-        <Link to="/">Back</Link>
-        <Link to={`/${userName}`}>Repository list</Link>
+        <Link id="go-back" to="/">
+          Back
+        </Link>
+        <Link id="go-repository-list" to={`/${userName}`}>
+          Repository list
+        </Link>
       </div>
     </div>
   )
